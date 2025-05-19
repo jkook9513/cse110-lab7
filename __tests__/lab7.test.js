@@ -21,7 +21,7 @@ describe('Basic user flow for Website', () => {
   // Check to make sure that all 20 <product-item> elements have data in them
   // We use .skip() here because this test has a TODO that has not been completed yet.
   // Make sure to remove the .skip after you finish the TODO. 
-  it.skip('Make sure <product-item> elements are populated', async () => {
+  it('Make sure <product-item> elements are populated', async () => {
     console.log('Checking to make sure <product-item> elements are populated...');
 
     // Start as true, if any don't have data, swap to false
@@ -53,6 +53,16 @@ describe('Basic user flow for Website', () => {
     * Remove the .skip from this it once you are finished writing this test.
     */
 
+    // Step 1 - Start
+    for (let i = 1; i < prodItemsData.length; i++) {
+      console.log(`Checking product item ${i + 1}`);
+      const value = prodItemsData[i];
+      if (value.title.length == 0) { allArePopulated = false; }
+      if (value.price.length == 0) { allArePopulated = false; }
+      if (value.image.length == 0) { allArePopulated = false; }
+    }
+    // Step 1 - End
+    
   }, 10000);
 
   // Check to make sure that when you click "Add to Cart" on the first <product-item> that
