@@ -1,4 +1,5 @@
-# CSE110 Lab 7
+# CSE110 Lab 7 
+`Jonathan Kook - A18093135`
 
 1. Where would you fit your automated tests in your Recipe project development pipeline? <br>
 `Within a Github action that runs whenever code is pushed.` 
