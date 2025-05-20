@@ -19,4 +19,4 @@ To check if a functin is returning the correct output, you should use a unit tes
 `2. Clearing the browser cache timed out. Try auditing this page again and file a bug if the issue persists.` <br>
 `3. <html> element does not have a [lang] attribute. No <meta name="viewport"> tag found.`
 
-![tests](tessts.png)
+![tests](tests.png)
